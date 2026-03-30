@@ -1,33 +1,13 @@
-
 # Portal de Denuncias Peru Seguro
 
-Sistema web para agilizar denuncias policiales en organizaciones dedicadas al derecho.
+![App Screenshot](https://i.imgur.com/MdTpaUi.png)
 
-
-
-![App Screenshot](https://i.imgur.com/9cCG6Nc.png)
-
+Perú Seguro sistema de seguridad ciudadana desarrollado para el proyecto de titulación en SISE. Este proyecto logra obtener cifras y resultados que miden la seguridad ciudadana y guardan registro de faltas y delitos ocurridos en el país.
 
 ## Instalación
 
 Instala mi proyecto
 
 ```bash
-  git clone https://github.com/GaboGabito05/sistema-gestion-denuncias-app.git
+  git clone https://github.com/ArcGabicho/peru-seguro.git && cd peru-seguro
 ```
-
-```bash
-  npm install
-```
-
-```bash
-  npm run dev
-```
-
-## Autor
-
-- [Gabriel Polack | Arquitecto de Software](https://www.linkedin.com/in/gabriel-polack-castillo/)
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT - consulta el archivo [LICENSE](./LICENSE) para más detalles.
