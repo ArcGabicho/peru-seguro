@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
-import { Toaster } from 'react-hot-toast';
 import './globals.css'
 
 const poppins = Poppins({
@@ -43,7 +42,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <html lang="es">
             <body className={`${poppins.variable} antialiased min-h-screen`}>
                 {children}
-                <Toaster />
             </body>
         </html>
     )
