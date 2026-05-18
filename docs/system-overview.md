@@ -23,14 +23,7 @@
 | **Framer Motion** | Animaciones y transiciones |
 | **Zod** | Validación de esquemas y formularios |
 | **React Hook Form** | Manejo de formularios complejos |
-| **MUI 7** (Material UI) | Componentes de interfaz |
-| **Chart.js + react-chartjs-2** | Visualización de gráficos y métricas |
-| **Leaflet + react-leaflet** | Mapas interactivos y mapas de calor |
-| **jsPDF / pdf-lib** | Generación de reportes PDF |
-| **xlsx / xlsx-js-style** | Exportación a Excel |
-| **OpenAI SDK** | Funcionalidades asistidas por IA |
 | **Lucide React** | Iconografía |
-| **React Hot Toast** | Notificaciones en tiempo real |
 
 ### Backend (Servidor)
 
@@ -91,7 +84,7 @@
 2. Next.js sirve las páginas (SSR/SSG) o las renderiza en cliente.
 3. Las denuncias y operaciones CRUD se envían a la API de ASP.NET Core.
 4. Entity Framework persiste los datos en SQL Server.
-5. Los reportes y dashboards se generan consultando la API y se visualizan con Chart.js / Leaflet.
+5. Los reportes y dashboards se generan consultando la API.
 
 ## 5. Módulos del Sistema
 
