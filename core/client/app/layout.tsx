@@ -1,28 +1,47 @@
+import type { Metadata } from 'next'
+import { Poppins } from 'next/font/google'
 import { Toaster } from 'react-hot-toast';
-import 'leaflet/dist/leaflet.css';
 import './globals.css'
+
+const poppins = Poppins({
+    subsets: ['latin'],
+    weight: ['300', '400', '500', '600', '700'],
+    variable: '--font-poppins',
+})
+
+export const metadata: Metadata = {
+    metadataBase: new URL('https://peru-seguro.com'),
+    title: 'Perú Seguro | Portal de Denuncias Online',
+    description: 'Para reclamar el título profesional se nos ordenó desarrollar un portal de denuncias digital que permita a los ciudadanos reportar delitos de corrupción y extorsión.',
+    openGraph: {
+        type: 'website',
+        url: '/',
+        siteName: 'Perú Seguro',
+        title: 'Perú Seguro | Portal de Denuncias Online',
+        description: 'Para reclamar el título profesional se nos ordenó desarrollar un portal de denuncias digital que permita a los ciudadanos reportar delitos de corrupción y extorsión.',
+        images: [
+            {
+                url: 'https://i.imgur.com/9cCG6Nc.png',
+                width: 1200,
+                height: 630,
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Perú Seguro | Portal de Denuncias Online',
+        description: 'Para reclamar el título profesional se nos ordenó desarrollar un portal de denuncias digital que permita a los ciudadanos reportar delitos de corrupción y extorsión.',
+        images: ['https://i.imgur.com/9cCG6Nc.png'],
+    },
+    other: {
+        'facebook:app_id': '',
+    },
+}
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
     return (
         <html lang="es">
-            <head>
-                <meta charSet="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="vortex-system-admin-page.pages.dev" />
-                <meta property="og:title" content="Perú Seguro | Portal de Denuncias Online" />
-                <meta property="og:description" content="Para reclamar el título profesional se nos ordenó desarrollar un portal de denuncias digital que permita a los ciudadanos reportar delitos de corrupción y extorsión." />
-                <meta property="og:image" content="https://i.imgur.com/9cCG6Nc.png" />
-                <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="vortex-system-admin-page.pages.dev" />
-                <meta property="twitter:title" content="Perú Seguro | Portal de Denuncias Online" />
-                <meta property="twitter:description" content="Para reclamar el título profesional se nos ordenó desarrollar un portal de denuncias digital que permita a los ciudadanos reportar delitos de corrupción y extorsión." />
-                <meta property="twitter:image" content="https://i.imgur.com/9cCG6Nc.png" />
-                <meta name="title" content="Perú Seguro | Portal de Denuncias Online" />
-                <meta name="description" content="Para reclamar el título profesional se nos ordenó desarrollar un portal de denuncias digital que permita a los ciudadanos reportar delitos de corrupción y extorsión." />
-                <title>Perú Seguro | Gestión de Denuncias</title>
-            </head>
-            <body>
+            <body className={`${poppins.variable} antialiased min-h-screen`}>
                 {children}
                 <Toaster />
             </body>
